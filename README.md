@@ -1,39 +1,72 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Vedic Personality Test
 
-Welcome,
+[The Vedic Personality Test](https://ijokpy.github.io/) TBC
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This [application](https://ijokpy.github.io/) is built as a milestone Project#2 for Code Institute Full Stack Software Development course. The [application](https://ijokpy.github.io/) is built using HTML,CSS and JavaScript Technologies.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+![](assets/testing/responsive.PNG)
 
-## Codeanywhere Reminders
+# Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+![](assets/images/)
 
-`python3 -m http.server`
+## 
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## 
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## 
 
-`http_server`
+## 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## 
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+# Technologies
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- HTML, CSS and JavaScript for code development
+- IDE in [Codeanywhere](https://app.codeanywhere.com/) to develop a code
+- [GiHub](https://github.com/) to store the code and control version
+- [Google Fonts](https://fonts.google.com/?preview.text=Welcome%20to%20the%20club&preview.text_type=custom&query=quick) to download required style
+- [Favicon.cc](https://www.favicon.cc/) to create the website favicon
+- [FontAwesome](https://fontawesome.com/) to use multiple different icons
+- [Convertio.co](https://convertio.co/download/eb3ecdaee00a5454d0ad83152d3a29ff55ea90/) to convert .png images to .webp
+- [Pexels.com](https://www.pexels.com/) to download free images
+- [Pixabay.com](https://pixabay.com/) to download free images
+- [Freepik.com](https://www.freepik.com/) to download free images
+- [Designevo.com](https://www.designevo.com/) to design logo
+- [W3C HTML Validator](https://validator.w3.org/#validate_by_input) to validate HTML code
+- [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/) to validate CSS code
+- [MyColor.space](https://mycolor.space/) to generate color pallette for the website
 
-To log into the Heroku toolbelt CLI:
+### Testing
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- The manual testing involved launching the website in Chrome, FireFox, Safari
+- The website is responsive
+- Confirmed that Logo and navigation tabs are visible and are responsive
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Bugs
 
----
+## Validation Testing
 
-Happy coding!
+- HTML validation via [W3 Markup](https://validator.w3.org/) complete, no errors or warning detected.
+- CSS validation via [Jigsaw](https://jigsaw.w3.org/css-validator/) complete, no errors detected.
+- Accessibility validation via [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
+
+### Deployment
+
+This project was deployed to GitHub pages. The steps to deploy are as follows:
+
+1. Launch GitHub and log in.
+2. Navigate to Repositories section and select `soloverse-book-club`.
+3. Select `Settings` and under `General` section, select `main` as default branch.
+4. Then navigate to `Pages` under `Code and automation` section.
+5. Confirm that under `Source` `Branch` is showing `main` and `/(root)`.
+6. Press `Save`.
+7. Click on the [link]() next to `Visit Site` to launch the website.
+
+## Content
+
+## Media
+
+### Credits
+
+-Thank you CodeInstitute for available resources.
