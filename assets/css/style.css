@@ -63,6 +63,7 @@ h3,p {
     margin-top: 0%;
     margin-bottom: 0%;
     color: white;
+    align-items: center;
 
 }
 
@@ -92,4 +93,28 @@ img {
     display:flex;
     flex-direction: column;
     text-align: center;
+}
+
+/*Button*/
+.btn{
+    background-color: #FFF7EF;
+    color: #B1886A;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: medium;
+    height: 3rem;
+}
+
+
+
+.btn:hover {
+    background-color: #B1886A;
+    color:#FFF7EF;
+    box-shadow: 0 0.4rem 1.4rem 0 #B1886A;
+    transform: translateY(-0.1rem);
+    transition:transform 150ms;
+    height: 110%m;
 }
