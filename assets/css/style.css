@@ -48,6 +48,7 @@ h3,p {
     display: flex;
     flex-direction: column;
     height: 0 0 0 auto;
+    background-color: #FFF7EF;
 }
 
 .flex-container-bottom {
