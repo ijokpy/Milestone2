@@ -97,6 +97,7 @@ p {
     text-align: center;
     float: left;
     margin-left: 2rem;
+    width:10rem;
 }
 a {
     text-decoration: none;
