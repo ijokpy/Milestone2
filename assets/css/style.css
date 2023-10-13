@@ -3,7 +3,7 @@
 
 /*Default styles*/
 :root {
-    background-color: rgb(234, 237, 168);
+    background-color: #DFE0DF;
     font-size: 62.5%;
 }
 
@@ -40,26 +40,54 @@ h3 {
     font-weight: 200;
 }
 
-/*Homepage container*/
+/* Homepage container */
+.flex-container-top {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container-mid {
+    display: flex;
+    flex-direction: row;
+    height: 0 0 0 auto;
+}
+
+.flex-container-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+#top-bottom-middle {
+
+    max-width: 30rem;
+    height: 0 0 0 auto;
+
+}
+
+img {
+    max-width: 30rem;
+    height: 0 0 0 auto;
+
+}
+
+.flex-items-top {
+    width: 30rem;
+    flex-direction: row;
+}
+
+.flex-items-bottom {
+    width: 30rem;
+    flex-direction: row;
+}
 .container {
-    width: 100vh;
+    width: 100%;
     height: 100vh;
     display:flex;
-    justify-content: conter;
+    justify-content: center;
     align-items: center;
     max-width: 90rem;
     margin: 0 auto;
+    display:flex;
     flex-direction: column;
-    justify-content: space-around;
     text-align: center;
-    
 }
-
-
-img {
-    max-width: 40%;
-    height: auto;
-}
-
-
-
