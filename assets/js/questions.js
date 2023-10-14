@@ -1,11 +1,8 @@
 const question = document.getElementById("question-title");
 const selection = Array.from(document.getElementsByClassName("selection-text"));
-const backButton = document.getElementById("backButton");
 const nextButton = document.getElementById("nextButton");
 const submitButton = document.getElementById("submitButton");
-const cancelButton = document.getElementById("cancelButton");
 const startOverButton = document.getElementById("startOverButton");
-const mainQuestionAnswerContainer = document.querySelector('.main-question-answer-container'); 
 
 
 let currentQuestion = {};
@@ -462,7 +459,6 @@ function getNewQuestion() {
             });
         });
 
-        backButton.disabled = questionCounter === 0;
         nextButton.disabled = selectedOptionIndex === -1;
     } else {
         // No more questions, show the submit button
@@ -479,14 +475,6 @@ function selectOption(selectedIndex, optionValue) {
     nextButton.disabled = false;
 }
 
-backButton.addEventListener("click", () => {
-    if (questionCounter > 0) {
-        questionCounter--;
-        selectedOptionIndex = -1;
-        getNewQuestion();
-    }
-});
-
 nextButton.addEventListener("click", () => {
     if (selectedOptionIndex !== -1) {
         questionCounter++;
@@ -496,29 +484,56 @@ nextButton.addEventListener("click", () => {
 });
 
 submitButton.addEventListener("click", () => {
-    // Display the personality type and scores
-    question.innerText = `Your personality type is: ${calculatePersonalityType()}`;
+    // Display the personality description and the "Start Over" button
+    question.innerText = "Your Personality Description";
     selection.forEach((option) => option.style.display = "none");
     submitButton.style.display = "none";
-    cancelButton.style.display = "none";
     startOverButton.style.display = "block";
-    displayScores();
+    displayPersonalityDescription(calculatePersonalityType());
 });
+
+function displayPersonalityDescription(personalityType) {
+    const descriptions = {
+        A: {
+            general: "General description for type A...",
+            ignorance: "Mode of Ignorance for type A...",
+            impulse: "Mode of Impulse for type A...",
+            goodness: "Mode of Goodness for type A...",
+        },
+        B: {
+            general: "General description for type B...",
+            ignorance: "Mode of Ignorance for type B...",
+            impulse: "Mode of Impulse for type B...",
+            goodness: "Mode of Goodness for type B...",
+        },
+        C: {
+            general: "General description for type C...",
+            ignorance: "Mode of Ignorance for type C...",
+            impulse: "Mode of Impulse for type C...",
+            goodness: "Mode of Goodness for type C...",
+        },
+        D: {
+            general: "General description for type D...",
+            ignorance: "Mode of Ignorance for type D...",
+            impulse: "Mode of Impulse for type D...",
+            goodness: "Mode of Goodness for type D...",
+        },
+    };
+
+    const descriptionContainer = document.createElement("div");
+    descriptionContainer.innerHTML = `
+        <p>${descriptions[personalityType].general}</p>
+        <p>Mode of Ignorance: ${descriptions[personalityType].ignorance}</p>
+        <p>Mode of Impulse: ${descriptions[personalityType].impulse}</p>
+        <p>Mode of Goodness: ${descriptions[personalityType].goodness}</p>
+    `;
+
+    question.appendChild(descriptionContainer);
+}
 
 function calculatePersonalityType() {
     const max = Math.max(answers.A, answers.B, answers.C, answers.D);
     return Object.keys(answers).find((key) => answers[key] === max);
-}
-
-function displayScores() {
-    const scoresList = document.createElement("ul");
-    scoresList.innerHTML = `
-        <li>A: ${answers.A}</li>
-        <li>B: ${answers.B}</li>
-        <li>C: ${answers.C}</li>
-        <li>D: ${answers.D}</li>
-    `;
-    question.appendChild(scoresList);
 }
 
 startOverButton.addEventListener("click", () => {
