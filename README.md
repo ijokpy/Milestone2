@@ -1,24 +1,38 @@
 # The Vedic Personality Test
 
-[The Vedic Personality Test](https://ijokpy.github.io/personality-test/index.html) TBC
+[The Vedic Personality Test](https://ijokpy.github.io/personality-test/index.html) is entertaining test to discover your personality type based on Vedic categories.
 
-This [application](https://ijokpy.github.io/personality-test/index.html) is built as a milestone Project#2 for Code Institute Full Stack Software Development course. The [application](https://ijokpy.github.io/) is built using HTML,CSS and JavaScript Technologies.
+This [application](https://ijokpy.github.io/personality-test/index.html) is built as a milestone Project#2 for Code Institute Full Stack Software Development course. The [application](https://ijokpy.github.io/personality-test/index.html) is built using HTML,CSS and JavaScript Technologies.
 
 ![](assets/testing/amiresponsive.PNG)
 
-# Features
+# UX Design
 
 ![](assets/images/)
 
-## 
+## User stories
 
-## 
+### As a user
+- I want to be entertained
+- I want to easy understand the navigation
+- I want to repeat or come back later
 
-## 
+## Structure
 
-## 
+### Homepage
+- Instruct the user what this test is about
+- Invites the user to start the test
+  
 
-## 
+## Quiz area
+- Alows the user to select prefered option and navigate to next question
+- Progress guides the user where they are in this test
+
+## Design
+- The design is simple and not overloaded
+
+## Colour Scheme
+![assets/images/colour_palette.webp]
 
 # Technologies
 
@@ -61,7 +75,7 @@ This project was deployed to GitHub pages. The steps to deploy are as follows:
 4. Then navigate to `Pages` under `Code and automation` section.
 5. Confirm that under `Source` `Branch` is showing `main` and `/(root)`.
 6. Press `Save`.
-7. Click on the [link]() next to `Visit Site` to launch the website.
+7. Click on the [link](https://ijokpy.github.io/personality-test/index.html) next to `Visit Site` to launch the website.
 
 ## Content
 
