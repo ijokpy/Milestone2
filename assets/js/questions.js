@@ -502,12 +502,13 @@ function hidePopup() {
 }
 
 submitButton.addEventListener("click", () => {
-    // Display the personality description and the "Start Over" button
-    question.innerText = "Your Personality Description";
+    const personalityType = calculatePersonalityType();
+    question.innerText = `Congratulations, your Vedic personality type is ${personalityTypes[personalityType]}`;
+    questionProgress.style.display = "none"; // Hide question progress
     selection.forEach((option) => option.style.display = "none");
     submitButton.style.display = "none";
     startOverButton.style.display = "block";
-    displayPersonalityDescription(calculatePersonalityType());
+    displayPersonalityDescription(personalityType);
 });
 
 function displayPersonalityDescription(personalityType) {
