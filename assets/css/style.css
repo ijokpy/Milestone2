@@ -176,19 +176,26 @@ img {
     }
 }
 
-@media screen and (min-width: 370px){
+@media screen and (min-width: 390px){
     .flex-items-top {
             display: flex;
             flex-direction: column;
+            align-content: center;
+            
         }
     
-        .flex-items-mid {
-            display: flex;
+        .flex-container-mid {
+            display:block;
+            flex-direction: column;
+            align-content: center;
+            width: 100%;
+
     
         }
     
         .flex-items-bottom {
             display: flex;
             flex-direction: column;
+            align-content: center;
         }
 }
