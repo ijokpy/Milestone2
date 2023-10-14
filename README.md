@@ -1,10 +1,10 @@
 # The Vedic Personality Test
 
-[The Vedic Personality Test](https://ijokpy.github.io/) TBC
+[The Vedic Personality Test](https://ijokpy.github.io/personality-test/index.html) TBC
 
-This [application](https://ijokpy.github.io/) is built as a milestone Project#2 for Code Institute Full Stack Software Development course. The [application](https://ijokpy.github.io/) is built using HTML,CSS and JavaScript Technologies.
+This [application](https://ijokpy.github.io/personality-test/index.html) is built as a milestone Project#2 for Code Institute Full Stack Software Development course. The [application](https://ijokpy.github.io/) is built using HTML,CSS and JavaScript Technologies.
 
-![](assets/testing/responsive.PNG)
+![](assets/testing/amiresponsive.PNG)
 
 # Features
 
