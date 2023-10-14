@@ -50,7 +50,7 @@ a {
 .flex-container-mid {
     display: flex;
     flex-direction: column;
-    height: 0 0 0 auto;
+    
     background-color: #FFF7EF;
 }
 
@@ -129,7 +129,7 @@ img {
     box-shadow: 0 0.4rem 1.4rem 0 #B1886A;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
-    height: 110%m;
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -208,7 +208,7 @@ img {
         display: flex;
         flex-direction: column;
         align-content: center;
-        height: 100;
+        
 
     }
 
