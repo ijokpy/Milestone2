@@ -1,8 +1,7 @@
-
 /* Google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Young+Serif&display=swap');
 
-/*Default styles*/
+/* Default styles */
 :root {
     background-color: #DFE0DF;
     font-size: 62.5%;
@@ -15,10 +14,7 @@
     font-family: 'Young Serif', serif;
 }
 
-
-/* Styles for question containes */
-
-
+/* Styles for question containers */
 .main-question-answer-container {
     display: flex;
     margin-bottom: 1rem;
@@ -26,10 +22,7 @@
     font-size: 1.5rem;
     border: 0.1rem solid #DE770F;
     background-color: white;
-    
-
 }
-
 
 .main-question-answer-container:hover {
     box-shadow: 0 0.4rem 1.4rem 0 #B1886A;
@@ -40,78 +33,95 @@
 .selection-prefix {
     padding: 1.5rem 2.5rem;
     background-color: #DE770F;
-    color:white;
+    color: white;
     text-align: center;
-    
 }
 
 .selection-text {
     padding: 1.5rem 1.5rem;
     text-align: left;
-
+    flex: 1;
 }
+
 h1 {
     font-size: 3.4rem;
-
     font-weight: 300;
 }
 
 h2 {
     font-size: 2.2rem;
-    padding-bottom: 3rem;;
+    padding-bottom: 3rem;
     font-weight: 200;
     text-align: center;
 }
 
-
 p {
     font-size: 2rem;
-    
     font-weight: 100;
+}
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    
 }
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 90rem;
     margin: 0 auto;
-    display: flex;
     flex-direction: column;
+    /* Removed 'display: flex' */
     text-align: center;
+    margin-top: 10rem;
+    
 }
-/*Button*/
+
+/* Buttons */
 .btn {
     background-color: #FFF7EF;
-    color: #B1886A;
-    padding: 1rem 1rem 1rem;
+    color: #DE770F;
+    padding: 1rem 1rem;
+   
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: medium;
-    height: 4rem;
     display: flex;
     flex-direction: row;
-    margin-bottom: 2rem;
-    text-align: center;
-    float: left;
+    margin-top: 0;
     margin-left: 2rem;
-    width:15rem;
+   
+    text-align: center;
+   
+    width: 15rem;
 }
+
 a {
     text-decoration: none;
 }
 
-
-
 .btn:hover {
-    background-color: #B1886A;
+    background-color: #DE770F;
     color: #FFF7EF;
-    box-shadow: 0 0.4rem 1.4rem 0 #B1886A;
+    box-shadow: 0 0.4rem 1.4rem 0 #DE770F;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
-    height: 110%m;
+    height: 4rem;
+    
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    
 }
