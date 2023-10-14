@@ -3,6 +3,8 @@ const selection = Array.from(document.getElementsByClassName("selection-text"));
 const nextButton = document.getElementById("nextButton");
 const submitButton = document.getElementById("submitButton");
 const startOverButton = document.getElementById("startOverButton");
+const popup = document.getElementById("popup");
+const questionProgress = document.getElementById("question-progress");
 
 
 let currentQuestion = {};
@@ -441,7 +443,7 @@ function startQuiz() {
     questionCounter = 0;
     answers = { A: 0, B: 0, C: 0, D: 0 };
     getNewQuestion();
-}
+};
 
 let selectedOptionIndex = -1;
 
@@ -449,6 +451,9 @@ function getNewQuestion() {
     if (questionCounter < questions.length) {
         currentQuestion = questions[questionCounter];
         question.innerText = currentQuestion.question;
+
+        // Update question progress
+        questionProgress.innerText = `Question ${questionCounter + 1} of ${questions.length}`;
 
         selection.forEach((option, index) => {
             option.innerText = currentQuestion.options[index].text;
@@ -480,8 +485,21 @@ nextButton.addEventListener("click", () => {
         questionCounter++;
         selectedOptionIndex = -1;
         getNewQuestion();
+    } else {
+        showPopup("Please select your option");
     }
 });
+
+function showPopup(message) {
+    const popup = document.getElementById("popup");
+    popup.innerHTML = `<p>${message}</p>`;
+    popup.style.display = "block";
+}
+
+function hidePopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+}
 
 submitButton.addEventListener("click", () => {
     // Display the personality description and the "Start Over" button
@@ -495,28 +513,28 @@ submitButton.addEventListener("click", () => {
 function displayPersonalityDescription(personalityType) {
     const descriptions = {
         A: {
-            general: "General description for type A...",
-            ignorance: "Mode of Ignorance for type A...",
-            impulse: "Mode of Impulse for type A...",
-            goodness: "Mode of Goodness for type A...",
+            general: "Description: People with the Guide personality type are known for their wisdom and insight. They often seek to provide guidance and mentorship to others, serving as a source of knowledge and advice.",
+            ignorance: "Mode of Ignorance: In this mode, Guides may exhibit ignorance, confusion, or doubt. They might struggle to find clarity in certain situations.",
+            impulse: "Mode of Impulse: Under the mode of impulse, Guides may act impulsively or react emotionally to challenges, deviating from their typical wisdom-based approach.",
+            goodness: "Mode of Goodness: In the mode of goodness, Guides display their characteristic wisdom and clarity, offering valuable insights to those around them.",
         },
         B: {
-            general: "General description for type B...",
-            ignorance: "Mode of Ignorance for type B...",
-            impulse: "Mode of Impulse for type B...",
-            goodness: "Mode of Goodness for type B...",
+            general: "Description: Leaders are characterized by their strong presence and power. They are natural-born leaders who often take charge in various situations and are dedicated to maintaining integrity and perfection.",
+            ignorance: "Mode of Ignorance: In this mode, Leaders may exhibit arrogance or authoritarian behavior, losing sight of their goal to uphold integrity.",
+            impulse: "Mode of Impulse:  Under the mode of impulse, Leaders might become impulsive or aggressive, seeking dominance and control.",
+            goodness: "Mode of Goodness: In the mode of goodness, Leaders effectively utilize their leadership qualities to guide and protect others with integrity and perfection.",
         },
         C: {
-            general: "General description for type C...",
-            ignorance: "Mode of Ignorance for type C...",
-            impulse: "Mode of Impulse for type C...",
-            goodness: "Mode of Goodness for type C...",
+            general: "Description: Creators are dynamic and resourceful individuals. They emphasize the value of hard work, creativity, and the acquisition of resources. They often seek to transform ideas into reality.",
+            ignorance: "Mode of Ignorance:  In this mode, Creators may become obsessed with material gains or excessive consumption, losing sight of their creative and resourceful nature.",
+            impulse: "Mode of Impulse: Under the mode of impulse, Creators can be prone to restlessness and a frenetic pace, often seeking quick results.",
+            goodness: "Mode of Goodness: In the mode of goodness, Creators utilize their resourcefulness to build and create while promoting a sense of balance and sustainable growth.",
         },
         D: {
-            general: "General description for type D...",
-            ignorance: "Mode of Ignorance for type D...",
-            impulse: "Mode of Impulse for type D...",
-            goodness: "Mode of Goodness for type D...",
+            general: "Description: Makers are known for their focus on stability and balance. They are nurturing and prioritize healthy and content relationships with family and friends.",
+            ignorance: "Mode of Ignorance:  In this mode, Makers may become lazy or stagnant, hindering their ability to maintain balance and stability.",
+            impulse: "Mode of Impulse: Under the mode of impulse, Makers may exhibit worry and overprotectiveness, disrupting their natural nurturing tendencies.",
+            goodness: "In the mode of goodness, Makers are at their best, providing stable and caring support to their loved ones and nurturing positive relationships.",
         },
     };
 

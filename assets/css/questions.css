@@ -59,13 +59,24 @@ p {
     font-size: 2rem;
     font-weight: 100;
 }
+#question-progress{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        width: 100%;
+        flex-direction: row;
+}
+
 .btn-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
-    
+    width: 100%;
+    flex-direction: row;
 }
+
 
 .container {
     width: 100%;
@@ -76,10 +87,8 @@ p {
     max-width: 90rem;
     margin: 0 auto;
     flex-direction: column;
-    /* Removed 'display: flex' */
     text-align: center;
     margin-top: 10rem;
-    
 }
 
 /* Buttons */
@@ -87,7 +96,6 @@ p {
     background-color: #FFF7EF;
     color: #DE770F;
     padding: 1rem 1rem;
-   
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -96,11 +104,9 @@ p {
     display: flex;
     flex-direction: row;
     margin-top: 0;
-    margin-left: 2rem;
-   
     text-align: center;
-   
     width: 15rem;
+    margin:0.5rem;
 }
 
 a {
@@ -114,14 +120,6 @@ a {
     transform: translateY(-0.1rem);
     transition: transform 150ms;
     height: 4rem;
-    
+
 }
 
-
-.btn-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 2rem;
-    
-}
