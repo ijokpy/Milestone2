@@ -22,10 +22,12 @@
 .main-question-answer-container {
     display: flex;
     margin-bottom: 1rem;
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
     border: 0.1rem solid #DE770F;
     background-color: white;
+    
+
 }
 
 
@@ -45,7 +47,7 @@
 
 .selection-text {
     padding: 1.5rem 1.5rem;
-    text-align: center;
+    text-align: left;
 
 }
 h1 {
@@ -97,7 +99,7 @@ p {
     text-align: center;
     float: left;
     margin-left: 2rem;
-    width:10rem;
+    width:15rem;
 }
 a {
     text-decoration: none;
