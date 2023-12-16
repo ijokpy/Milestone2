@@ -9,3 +9,65 @@ body {
     background-position: center 9%;
 
 }
+
+.question-number .instruction-title {
+
+
+    padding-top: 1px;
+    margin-bottom: 1px;
+}
+
+li {
+    text-align: left;
+    margin-left: 5px;
+    font-size: 16px;
+    padding-top: 1px;
+    margin-bottom: 1px;
+
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popup-content {
+    background: #fff;
+    max-width: 60%;
+    max-height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    overflow: auto;
+
+}
+
+.popup button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.question-number .instruction-title {
+
+    font-size: 18px;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+}
+
+li {
+    text-align: left;
+    margin-left: 5px;
+    font-size: 16px;
+    padding-top: 0.1px;
+
+}
