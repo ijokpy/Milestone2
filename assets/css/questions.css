@@ -41,6 +41,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .question-number h3 {
@@ -100,7 +101,7 @@ body {
 }
 
 .nav-back {
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .left-arrow i {
@@ -136,9 +137,37 @@ body {
     margin-top: 10px;
     flex-direction: row;
     align-items: center;
+    font-size: 20px;
+}
 
+.option-circle {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #D16226;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option-circle:hover {
+    background-color: #D16226;
+}
+
+.option-letter {
+    font-size: 18px;
+    color: #D16226;
+    transition: color 0.3s;
+}
+
+.option-circle:hover .option-letter {
+    color: #fff;
 }
 
 .option-answer-value {
-    margin-left: 20px;
+    margin-left: 30px;
+
 }
