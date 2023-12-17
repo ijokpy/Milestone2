@@ -436,7 +436,7 @@ let questions = [
         ],
     },
 
-    // Add the other questions here
+
 ];
 
 function startQuiz() {
