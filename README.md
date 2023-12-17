@@ -1,4 +1,4 @@
-# The Vedic PErsonality Test ()
+# The Vedic Personality Test ()
 
 ![Website Mock Up](assets/images/readme/mockup.png)
 
