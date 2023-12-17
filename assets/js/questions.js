@@ -15,7 +15,7 @@ document.getElementById("exitBtn").addEventListener("click", function () {
 
 // Handles the OK button in the Exit popup
 document.getElementById("confirmExit").addEventListener("click", function () {
-    window.location.href = "index.html"; // Replace with your desired URL
+    window.location.href = "index.html";
 });
 
 // Handles the Cancel button in the Exit popup
